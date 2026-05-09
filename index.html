@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#22374;&#20811;&#22823;&#25112;</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="&#22374;&#20811;&#22823;&#25112;&#28216;&#25103;&#21306;&#22495;">
+        <canvas id="game" width="720" height="720"></canvas>
+        <div id="overlay" class="overlay">
+          <h1>&#22374;&#20811;&#22823;&#25112;</h1>
+          <p>&#23432;&#20303;&#22522;&#22320;&#65292;&#20987;&#27585;&#25152;&#26377;&#25932;&#20891;&#12290;</p>
+          <button id="startButton" type="button">&#24320;&#22987;&#28216;&#25103;</button>
+        </div>
+      </section>
+
+      <aside class="hud" aria-label="&#28216;&#25103;&#29366;&#24577;">
+        <div>
+          <span>&#29983;&#21629;</span>
+          <strong id="lives">3</strong>
+        </div>
+        <div>
+          <span>&#20851;&#21345;</span>
+          <strong id="level">1</strong>
+        </div>
+        <div>
+          <span>&#24471;&#20998;</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>&#25932;&#20891;</span>
+          <strong id="enemies">0</strong>
+        </div>
+        <div class="controls">
+          <span>&#31227;&#21160;</span>
+          <strong>WASD / &#26041;&#21521;&#38190;</strong>
+        </div>
+        <div class="controls">
+          <span>&#24320;&#28779;</span>
+          <strong>&#31354;&#26684;</strong>
+        </div>
+        <button id="pauseButton" type="button" aria-pressed="false">&#26242;&#20572;</button>
+      </aside>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
